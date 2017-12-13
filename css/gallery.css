@@ -1,0 +1,131 @@
+
+	@font-face{
+	font-family: "Font_home";
+	src:url(./Font/CaviarDreams.ttf) format("truetype");
+}
+
+
+*{
+	box-sizing: border-box;
+	color: white;
+}
+
+
+html {
+	background-color: rgb(43, 49, 55);
+	font-family: Font_home;
+}
+
+.header-div{
+	grid-area: header;
+	background-color: rgb(36, 41, 46);
+	color:white;
+	height: 100%;
+}
+.nav{
+	margin-left: 5%;
+	text-decoration: none;
+	font-size: 250%;
+	color: white;
+	text-align: center;
+	padding: 2% 2% 2% 2%;
+	grid-area:header;
+}
+.nav:hover{
+		opacity: 0.5;
+		border-bottom: 2px solid #ffffff;
+}
+
+.bdy{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.div1{
+	grid-area: div1;
+}
+
+.div2{
+	grid-area: div2;
+}
+
+.img{
+	margin:4%;
+	margin-left: 8%;
+	width: 80%;
+	height: auto;
+	border: solid white;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+}
+.img:hover{
+	width: 82%;
+	height: auto;
+}
+.cover{
+	margin-left: 8%;
+	width: 180%;
+	height: auto;
+	margin-top: 8%;
+	border: solid white;
+}
+
+@media only screen and (max-width: 600px) {
+		/*phones*/
+		body {
+
+			display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "header"
+                "cover"
+                "div1"
+                "div2"
+                "footer"
+			}
+
+			.nav {
+				font-size: 100%;
+				}
+
+			.cover {
+			margin-left: 4%;
+			margin-right: 4%;
+			width: 80%;
+			height: auto;
+			margin-top: 8%;
+			}
+			.cover-div img{
+				max-width: 80%;
+				height: auto;
+				margin-left: 0.5%; 
+			}
+
+			p{
+				font-size: 16px;
+				display: inline;
+			}
+
+	}
+
+	@media only screen and (min-width: 601px){
+		/*desktop*/
+		body{
+	display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-template-areas: 
+                "header header"
+                "cover cover"
+                "div1 div2" 
+                "footer footer";
+            }
+
+.nav{
+
+	font-size: 250%;
+}
+}

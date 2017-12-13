@@ -1,0 +1,254 @@
+		@font-face{
+		font-family: "Font_home";
+		src:url(./Font/CaviarDreams.ttf) format("truetype");
+	}
+
+		@font-face{
+			font-family: star-wars;
+			src:url(./Font/star-wars2.otf);
+		}
+		
+	*{
+		box-sizing: border-box;
+		color: white;
+	}
+
+	html {
+		background-color: rgb(43, 49, 55);
+		font-family: Font_home;
+		color: white;
+	}
+
+	.header-div{
+		grid-area: header;
+		background-color: rgb(36, 41, 46);
+	}
+
+	.js-time{
+		display: inline;
+		margin: auto;
+		}
+
+	.content {
+	            grid-area: content;
+	            padding: 5%;
+	            margin-top: 18%;
+	            margin-left: 5%;
+	            opacity: 0.8;
+	            background-color:rgba(0, 0, 0, 0.25);
+	            width: 100%;
+	}
+
+	.content2 {
+	            grid-area: content2;
+	            padding: 5%;
+	            margin-left: 10%;
+	            margin-top: 10%;
+	            opacity: 0.8;
+	            background-color:rgba(0, 0, 0, 0.25);
+	            margin-right: 10%
+	}
+	.add-disc{
+		grid-area: contactfooter;
+		font-size:150%;
+		margin-top: 8%;
+		text-align: center;
+	}
+
+	li{
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+
+	.dp {
+		grid-area: content1;
+		margin-top: 14%;
+		margin-left: 10%;
+		margin-right: 10%;
+		width: 70%;
+		height: 85%;
+		}
+
+	.hobby-list{
+		padding: 0;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.li-hobby{
+		padding: 0;
+		margin-top: 2%; 
+		margin-bottom: 2%;
+		font-weight: bolder;
+
+	}
+	.contact{
+		margin-left: 22%;
+		margin-top: 5%;
+	}
+	.nav{
+		margin-left: 5%;
+		text-decoration: none;
+		text-align: center;
+		padding: 2% 2% 2% 2%;
+	}
+
+	.nav:hover {
+		opacity: 0.5;
+		border-bottom: 2px solid #ffffff;
+	}
+
+	.time{
+		grid-area:footer;
+	}
+
+	#fbpic:hover, #emailpic:hover, #linkedinpic:hover, #twitterpic:hover, #gitpic:hover, #quora:hover{
+		filter: drop-shadow(15px 15px 15px #000011);
+	}
+	
+	.contact-img{
+			width: 100px;
+			height: 100px;
+			margin-right: 3%;
+			-webkit-transition: all 0.2s ease;
+     		-moz-transition: all 0.2s ease;
+      		-ms-transition: all 0.2s ease;
+          	transition: all 0.2s ease;
+	}
+	.cimg{
+		width: 100px;
+		height: 100px;
+		padding-left: 2%; 
+	}
+	.contact-img:hover{
+		width: 105px;
+		height: 105px;
+	}
+	.contact{
+		grid-area:contact;
+		margin-top: 8%;
+		align-items: center;
+		display: inline-block;
+	}
+	
+	.connect-text{
+		font-size: 500%;
+		grid-area: contact-head;
+		text-align: center;
+		margin-top: 10%;
+		margin-right: 20%;
+		opacity: 0.7;	
+	}
+	@media only screen and (max-width: 600px) {
+			/*phones*/
+			body {
+
+		display: grid;
+	            grid-template-columns: 1fr;
+	            grid-template-areas: 
+	                "header" 
+	                "content1"
+	                "content"
+	                "content2"
+	                "contact-head"
+	                "contact"
+	                "contactfooter"
+	                "footer";
+				}
+		.connect-text{
+		font-size: 250%;
+		grid-area: contact-head;
+		margin-left: 20%;
+		margin-top: 10%;
+		opacity: 0.7;
+	}
+		.li-hobby{
+			font-size: 150%;
+		}
+		.nav{
+			font-size: 150%;
+		}
+		.content2{
+			font-size: 100%;
+		}
+		.content{
+			font-size: 100%;
+		}
+
+		}
+
+		@media only screen and (max-width: 768px) {
+			/*tablets*/
+			body {
+
+		display: grid;
+	            grid-template-columns: 1fr;
+	            grid-template-areas: 
+	                "header" 
+	                "content1"
+	                "content"
+	                "content2"
+	                "contact"
+	                "contactfooter"
+	                "footer";
+				}
+
+				.connect-text{
+		font-size: 350%;
+		grid-area: contact-head;
+		margin-left: 20%;
+		margin-top: 10%;
+		opacity: 0.7;	
+	}
+
+		
+		.li-hobby{
+			font-size: 200%;
+		}
+		.nav{
+			font-size: 150%;
+		}
+		.content2{
+			font-size: 150%;
+		}
+		.content{
+			font-size: 150%;
+		}
+	}
+
+		@media only screen and (min-width: 769px){
+			/*desktop*/
+			body {
+
+		display: grid;
+	            grid-template-columns: 0.5fr 0.5fr;
+	            grid-template-areas: 
+	                "header header" 
+	                "content content1"
+	                "content2 content2"
+	                "contact-head contact-head"
+	                "contact contact"
+	                "contactfooter contactfooter"
+	                "footer footer";
+					}
+
+		.connect-text{
+		font-size: 250%;
+		grid-area: contact-head;
+		margin-left: 20%;
+		margin-top: 10%;
+		opacity: 0.7;	
+	}
+		.li-hobby{
+			font-size: 200%;
+		}
+		.nav{
+			font-size: 250%;
+		}
+		.content2{
+			font-size: 150%;
+		}
+		.content{
+			font-size: 150%;
+		}
+
+		}

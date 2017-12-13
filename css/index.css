@@ -1,0 +1,42 @@
+html {
+	background-image: url("../images/back2.jpg");
+    background-color: #24292e;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    background-position: center;
+}
+@font-face{
+	font-family: "Font";
+	src:url(./Font/Adlery-Pro-trial.ttf) format("truetype");
+}
+
+p {
+	color: #ffff00;
+    font-size: 80px;
+    opacity: 0.8;
+    text-align: left;
+    margin-top: 20%;
+    margin-left: 10%;
+    padding: 0px;
+    font-family: Font;
+}
+button {
+    background-color: #24292e;
+    border: none;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 30px;
+    opacity: 0.6;
+    color: white;
+ 	margin-left: 25%;
+ 	font-family: Font;
+}
+button:hover {
+    background-color: black;
+    color: #ffff00;
+}
